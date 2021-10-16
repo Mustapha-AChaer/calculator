@@ -1,0 +1,72 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 10px;
+}
+
+body{
+    background-color: bisque;
+    font-family: 'Scheherazade New', serif;
+    text-transform: capitalize;
+    padding: 10rem;
+   
+}
+
+button{
+    padding: 2px;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50rem;
+    background-color:#5F9EA0;
+    letter-spacing: .2rem;
+}
+
+.calculator{
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 630px) {
+    .labels{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    body{
+        padding: 15rem 5rem;
+    
+    }
+   
+    h1{
+        font-size: 1.7rem;
+    }
+    .calculator{
+        font-size: 1.3rem;
+    }
+}
+
+
+
+
+
+
+

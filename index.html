@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="welcomeMessage">
+        <h1>Welcome to the online calculator</h1>
+        <h3>Enter your digits</h3>
+      </div>
+      <div class="calculator">
+        <div class="labels">
+          <label for="number1">
+            a:
+            <input type="number" name="" id="number1" />
+          </label>
+          <label for="number2">
+            b: <input type="number" name="" id="number2" />
+          </label>
+        </div>
+
+        <div class="buttons">
+          <button onclick="calc(this.id)" id="add">Add</button>
+          <button onclick="calc(this.id)" id="subtract">subtract</button>
+          <button onclick="calc(this.id)" id="multiply">multiply</button>
+          <button onclick="calc(this.id)" id="divide">divide</button>
+        </div>
+
+        <div class="printArray">
+          Printing: <br />
+          <button onclick="calc(this.id)" id="print">print array</button>
+          <p id="values"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="arrayManipulation.js"></script>
+  </body>
+</html>
